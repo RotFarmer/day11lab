@@ -1,0 +1,12 @@
+.lightBulb{
+    width:25px;
+    height:25px;
+    border:1px solid black;
+    background-color: lightgrey;
+}
+.lightact{
+    background-color:yellow;
+}
+.endact{
+    display:none;
+}

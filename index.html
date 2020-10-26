@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="vending-machine-container">
+        <p class="total">Total: $0.00</p>
+        <button class="cola" data-price="1.5">cola</button>
+        <button class="pretzels" data-price="0.99">pretzels</button>
+        <button class="candy-bar" data-price="1.25">candy bar</button>
+        <button class="water" data-price="2.25">water</button>
+    </div>
+    <div class="money-maker-container">
+        <form class="coin-creator">
+            <label for="number">how many?</label>
+            <input type="number" id="number" name="number" placeholder="0">
+            <label for="coin">which coin?</label>
+            <select name="coin" id="coin">
+                <option value="penny">penny</option>
+                <option value="nickel">nickel</option>
+                <option value="dime">dime</option>
+                <option value="quarter">quarter</option>
+            </select>
+            <button>make money!</button>
+        </form>
+        <div class="coin-container"></div>
+    </div>
+    <div class="light-bulb-container">
+        <div class="lightBulb">light bulb</div>
+        <button class="on">on</button>
+        <button class="off">off</button>
+        <button class="toggle">toggle</button>
+        <button class="end">end</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
