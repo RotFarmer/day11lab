@@ -1,6 +1,39 @@
-.lightBulb{
-    width:25px;
+.coin-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: #ccc;
+}
+.circle{
+    display: flex;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    align-items:center;
+    justify-content: center;
+}
+.penny{
+    height: 15px;
+    width: 15px;
+    background-color:brown;
+}
+.nickel{
     height:25px;
+    width:25px;
+    background-color:silver;
+}
+.dime{
+    height:12px;
+    width:12px;
+    background-color:gray;
+}
+.quarter{
+    height:50px;
+    width:50px;
+}
+.lightBulb{
+    width:50px;
+    height:50px;
     border:1px solid black;
     background-color: lightgrey;
 }

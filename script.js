@@ -47,12 +47,34 @@ moneyMaker.addEventListener("submit", (e) => {
     let coin = formData.get("coin");
     for (let i = 1; i <= number; i++) {
         let newDiv = document.createElement("div");
+        newDiv.classList.add("circle")
         newDiv.innerText = `${coin}`;
         let coinContainer = document.querySelector(".coin-container");
         coinContainer.append(newDiv);
         newDiv.addEventListener("click", () => {
-            newDiv.style.display = "none"
+            // newDiv.style.display = "none"
+            newDiv.remove()
         })
+        let coinCount = document.querySelector(".coinTotal");
+        let cointotes = 0
+        if (coin === "penny") {
+            newDiv.classList.add("penny")
+            let worth = 0.01
+            cointotes += (worth * number)
+        } else if (coin === "nickel") {
+            newDiv.classList.add("nickel")
+            let worth = 0.05
+            cointotes += (worth * number)
+        } else if (coin === "dime") {
+            newDiv.classList.add("dime")
+            let worth = 0.10
+            cointotes += (worth * number)
+        } else if (coin === "quarter") {
+            newDiv.classList.add("quarter")
+            let worth = 0.25
+            cointotes += (worth * number)
+            coinCount.innerText = `Total: $${cointotes.toFixed(2)}`
+        }
     }
     moneyMaker.reset();
 })
